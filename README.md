@@ -441,7 +441,7 @@ to check which package introduces the one conflicts with yours, and then you can
 
 **Here's an example:**
 
-To exclude `javax.ws.rs:jsr311-api:jar:1.1.1:compile` from `swagger-jaxrs_2.10`:
+To exclude `jakarta.ws.rs:jsr311-api:jar:1.1.1:compile` from `swagger-jaxrs_2.10`:
 
 ```xml
 <dependency>
@@ -450,7 +450,7 @@ To exclude `javax.ws.rs:jsr311-api:jar:1.1.1:compile` from `swagger-jaxrs_2.10`:
     <version>1.3.2</version>
     <exclusions>
         <exclusion>
-            <groupId>javax.ws.rs</groupId>
+            <groupId>jakarta.ws.rs</groupId>
             <artifactId>jsr311-api</artifactId>
         </exclusion>
     </exclusions>
