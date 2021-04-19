@@ -25,7 +25,7 @@ import org.apache.maven.plugin.logging.Log;
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.web.bind.annotation.*;
 
-import javax.ws.rs.*;
+import jakarta.ws.rs.*;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;

@@ -6,7 +6,7 @@ import com.google.common.collect.Sets;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugin.logging.Log;
 
-import javax.ws.rs.Path;
+import jakarta.ws.rs.Path;
 import java.util.Set;
 
 /**

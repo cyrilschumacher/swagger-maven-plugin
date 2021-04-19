@@ -10,7 +10,7 @@ import io.swagger.jaxrs.ext.SwaggerExtension;
 import io.swagger.models.parameters.Parameter;
 import org.apache.commons.lang3.reflect.TypeUtils;
 
-import javax.ws.rs.BeanParam;
+import jakarta.ws.rs.BeanParam;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 import java.util.Iterator;

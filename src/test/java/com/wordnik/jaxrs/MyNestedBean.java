@@ -1,6 +1,6 @@
 package com.wordnik.jaxrs;
 
-import javax.ws.rs.HeaderParam;
+import jakarta.ws.rs.HeaderParam;
 
 import io.swagger.annotations.ApiParam;
 

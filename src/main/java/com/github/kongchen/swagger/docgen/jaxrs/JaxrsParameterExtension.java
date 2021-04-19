@@ -9,7 +9,7 @@ import io.swagger.jaxrs.ext.SwaggerExtension;
 import io.swagger.models.parameters.*;
 import io.swagger.models.properties.Property;
 
-import javax.ws.rs.*;
+import jakarta.ws.rs.*;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 import java.util.*;
