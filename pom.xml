@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.kongchen</groupId>
+    <groupId>io.github.cyrilschumacher</groupId>
     <artifactId>swagger-maven-plugin</artifactId>
     <version>3.1.9-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
@@ -18,10 +18,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git@github.com:kongchen/swagger-maven-plugin.git</connection>
-        <url>scm:git:git@github.com:kongchen/swagger-maven-plugin.git</url>
-        <developerConnection>scm:git:git@github.com:kongchen/swagger-maven-plugin.git</developerConnection>
-        <tag>HEAD</tag>
+        <connection>scm:git:ssh://git@github.com/cyrilschumacher/swagger-maven-plugin.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/cyrilschumacher/swagger-maven-plugin.git</developerConnection>
+        <url>https://github.com/cyrilschumacher/swagger-maven-plugin</url>
     </scm>
 
     <developers>
@@ -38,6 +37,10 @@
         <developer>
             <id>who</id>
             <name>Andrew B</name>
+        </developer>
+        <developer>
+            <id>cyrilschumacher</id>
+            <name>Cyril Schumacher</name>
         </developer>
     </developers>
     <contributors>
