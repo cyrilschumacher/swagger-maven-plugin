@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.cyrilschumacher</groupId>
     <artifactId>swagger-maven-plugin</artifactId>
-    <version>3.1.9-SNAPSHOT</version>
+    <version>3.1.9</version>
     <packaging>maven-plugin</packaging>
     <name>Swagger Maven Plugin</name>
     <description>
@@ -21,7 +21,8 @@
         <connection>scm:git:ssh://git@github.com/cyrilschumacher/swagger-maven-plugin.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/cyrilschumacher/swagger-maven-plugin.git</developerConnection>
         <url>https://github.com/cyrilschumacher/swagger-maven-plugin</url>
-    </scm>
+      <tag>swagger-maven-plugin-3.1.9</tag>
+  </scm>
 
     <developers>
         <developer>
