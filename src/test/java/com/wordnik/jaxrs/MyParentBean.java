@@ -2,7 +2,7 @@ package com.wordnik.jaxrs;
 
 import io.swagger.annotations.ApiParam;
 
-import javax.ws.rs.HeaderParam;
+import jakarta.ws.rs.HeaderParam;
 
 /**
  * @author Vinayak Hulawale [vinhulawale@gmail.com]

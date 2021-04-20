@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.kongchen</groupId>
+    <groupId>io.github.cyrilschumacher</groupId>
     <artifactId>swagger-maven-plugin</artifactId>
-    <version>3.1.9-SNAPSHOT</version>
+    <version>3.1.9</version>
     <packaging>maven-plugin</packaging>
     <name>Swagger Maven Plugin</name>
     <description>
@@ -18,11 +18,11 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git@github.com:kongchen/swagger-maven-plugin.git</connection>
-        <url>scm:git:git@github.com:kongchen/swagger-maven-plugin.git</url>
-        <developerConnection>scm:git:git@github.com:kongchen/swagger-maven-plugin.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
+        <connection>scm:git:ssh://git@github.com/cyrilschumacher/swagger-maven-plugin.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/cyrilschumacher/swagger-maven-plugin.git</developerConnection>
+        <url>https://github.com/cyrilschumacher/swagger-maven-plugin</url>
+      <tag>swagger-maven-plugin-3.1.9</tag>
+  </scm>
 
     <developers>
         <developer>
@@ -38,6 +38,10 @@
         <developer>
             <id>who</id>
             <name>Andrew B</name>
+        </developer>
+        <developer>
+            <id>cyrilschumacher</id>
+            <name>Cyril Schumacher</name>
         </developer>
     </developers>
     <contributors>
@@ -62,23 +66,23 @@
 
         <!-- Dependency versions -->
         <maven.version>2.2.1</maven.version>
-        <swagger.version>1.5.21</swagger.version>
-        <jackson.version>2.8.9</jackson.version>
-        <log4j.version>1.2.16</log4j.version>
+        <swagger.version>1.6.3</swagger.version>
+        <jackson.version>2.12.3</jackson.version>
+        <log4j.version>1.2.17</log4j.version>
         <handlebars.version>1.3.2</handlebars.version>
-        <commons-io.version>2.0.1</commons-io.version>
+        <commons-io.version>2.8.0</commons-io.version>
         <reflections.version>0.9.9</reflections.version>
         <springframework.version>4.3.7.RELEASE</springframework.version>
-        <commons-lang3.version>3.9</commons-lang3.version>
-        <version.jersey-server>1.13</version.jersey-server>
-        <version.javax.ws.rs-api>2.0.1</version.javax.ws.rs-api>
-        <version.maven-plugin-annotations>3.3</version.maven-plugin-annotations>
+        <commons-lang3.version>3.12.0</commons-lang3.version>
+        <version.jersey-server>1.19.4</version.jersey-server>
+        <version.javax.ws.rs-api>3.0.0</version.javax.ws.rs-api>
+        <version.maven-plugin-annotations>3.6.0</version.maven-plugin-annotations>
         <!-- Test dependency versions -->
         <maven-testing-harness.version>1.3</maven-testing-harness.version>
-        <testng.version>6.8.8</testng.version>
-        <jettison.version>1.3.3</jettison.version>
-        <json-unit.version>1.17.0</json-unit.version>
-        <version.mockito-core>2.18.3</version.mockito-core>
+        <testng.version>6.14.3</testng.version>
+        <jettison.version>1.4.1</jettison.version>
+        <json-unit.version>1.31.1</json-unit.version>
+        <version.mockito-core>2.28.2</version.mockito-core>
         <version.hamcrest-library>1.3</version.hamcrest-library>
         <version.jaxb>2.3.1</version.jaxb>
 
@@ -86,8 +90,8 @@
         <version.maven-release-plugin>2.5.3</version.maven-release-plugin>
         <version.plexus-component-metadata>1.5.5</version.plexus-component-metadata>
         <version.maven-compiler-plugin>2.3.2</version.maven-compiler-plugin>
-        <version.maven-plugin-plugin>3.3</version.maven-plugin-plugin>
-        <version.animal-sniffer-plugin>1.14</version.animal-sniffer-plugin>
+        <version.maven-plugin-plugin>3.6.0</version.maven-plugin-plugin>
+        <version.animal-sniffer-plugin>1.20</version.animal-sniffer-plugin>
         <version.maven-source-plugin>2.1.2</version.maven-source-plugin>
         <version.maven-javadoc-plugin>2.7</version.maven-javadoc-plugin>
         <version.maven-gpg-plugin>1.6</version.maven-gpg-plugin>
@@ -152,12 +156,12 @@
         </dependency>
 
         <dependency>
-            <groupId>io.swagger</groupId>
+            <groupId>io.github.cyrilschumacher</groupId>
             <artifactId>swagger-jaxrs</artifactId>
             <version>${swagger.version}</version>
         </dependency>
         <dependency>
-            <groupId>io.swagger</groupId>
+            <groupId>io.github.cyrilschumacher</groupId>
             <artifactId>swagger-servlet</artifactId>
             <version>${swagger.version}</version>
         </dependency>
@@ -183,12 +187,12 @@
         </dependency>
 
         <dependency>
-            <groupId>javax.ws.rs</groupId>
-            <artifactId>javax.ws.rs-api</artifactId>
+            <groupId>jakarta.ws.rs</groupId>
+            <artifactId>jakarta.ws.rs-api</artifactId>
             <version>${version.javax.ws.rs-api}</version>
         </dependency>
         <dependency>
-            <groupId>io.swagger</groupId>
+            <groupId>io.github.cyrilschumacher</groupId>
             <artifactId>swagger-jersey-jaxrs</artifactId>
             <version>${swagger.version}</version>
         </dependency>
@@ -468,14 +472,12 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>${sonatypeOssDistMgmtSnapshotsUrl}</url>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
         <repository>
-            <id>sonatype-nexus-staging</id>
-            <name>Nexus Release Repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
 </project>

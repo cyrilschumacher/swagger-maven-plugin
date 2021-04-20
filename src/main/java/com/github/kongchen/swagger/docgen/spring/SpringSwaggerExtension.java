@@ -307,10 +307,10 @@ public class SpringSwaggerExtension extends AbstractSwaggerExtension {
         String clazzName = clazz.getName();
 
         switch (clazzName) {
-            case "javax.servlet.ServletRequest":
-            case "javax.servlet.ServletResponse":
-            case "javax.servlet.http.HttpSession":
-            case "javax.servlet.http.PushBuilder":
+            case "jakarta.servlet.ServletRequest":
+            case "jakarta.servlet.ServletResponse":
+            case "jakarta.servlet.http.HttpSession":
+            case "jakarta.servlet.http.PushBuilder":
             case "java.security.Principal":
             case "java.io.OutputStream":
             case "java.io.Writer":

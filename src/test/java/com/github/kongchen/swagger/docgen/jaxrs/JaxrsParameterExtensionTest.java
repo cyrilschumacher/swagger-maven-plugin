@@ -8,8 +8,8 @@ import io.swagger.models.parameters.Parameter;
 import org.apache.commons.lang3.reflect.MethodUtils;
 import org.testng.annotations.Test;
 
-import javax.ws.rs.DefaultValue;
-import javax.ws.rs.QueryParam;
+import jakarta.ws.rs.DefaultValue;
+import jakarta.ws.rs.QueryParam;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 import java.util.List;

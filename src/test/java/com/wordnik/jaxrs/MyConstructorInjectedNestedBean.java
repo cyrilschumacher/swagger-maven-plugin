@@ -1,7 +1,7 @@
 package com.wordnik.jaxrs;
 
-import javax.ws.rs.DefaultValue;
-import javax.ws.rs.HeaderParam;
+import jakarta.ws.rs.DefaultValue;
+import jakarta.ws.rs.HeaderParam;
 
 import io.swagger.annotations.ApiParam;
 
