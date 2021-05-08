@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.org/cyrilschumacher/swagger-maven-plugin.svg?branch=master)](https://travis-ci.org/github/cyrilschumacher/swagger-maven-plugin)
 ![Sonatype Nexus (Releases)](https://img.shields.io/nexus/r/io.github.cyrilschumacher/swagger-maven-plugin?server=https%3A%2F%2Fs01.oss.sonatype.org%2F)
 
+> Fork of the [swagger-maven-plugin](https://github.com/kongchen/swagger-maven-plugin) project. This fork proposes an upgrade of Java EE.
+
 This plugin enables your Swagger-annotated project to generate **Swagger specs** and **customizable, templated static documents** during the maven build phase. Unlike swagger-core, swagger-maven-plugin does not actively serve the spec with the rest of the application; it generates the spec as a build artifact to be used in downstream Swagger tooling.
 
 # Features
