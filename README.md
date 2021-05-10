@@ -1,6 +1,6 @@
 # Swagger Maven Plugin
 
-[![Build Status](https://travis-ci.org/cyrilschumacher/swagger-maven-plugin.svg?branch=master)](https://travis-ci.org/github/cyrilschumacher/swagger-maven-plugin)
+[![Build Status](https://travis-ci.com/cyrilschumacher/swagger-maven-plugin.svg?branch=master)](https://travis-ci.com/github/cyrilschumacher/swagger-maven-plugin)
 ![Sonatype Nexus (Releases)](https://img.shields.io/nexus/r/io.github.cyrilschumacher/swagger-maven-plugin?server=https%3A%2F%2Fs01.oss.sonatype.org%2F)
 
 > Fork of the [swagger-maven-plugin](https://github.com/kongchen/swagger-maven-plugin) project. This fork proposes an upgrade of Java EE.
