@@ -1,8 +1,11 @@
 language: java
+branches:
+  only:
+    - gh-pages
+    - /.*/
 jdk:
-  - openjdk8
   - openjdk11
-  - openjdk11
+  - openjdk15
 cache:
   directories:
     - $HOME/.m2
